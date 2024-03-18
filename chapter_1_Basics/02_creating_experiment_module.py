@@ -6,7 +6,7 @@ logger = logging.getLogger()
 if __name__ == "__main__":
     # Creating an MLflow experiment from customized module
     experiment_id = utils.create_experiment(
-        name="mlflow_demo1",
+        experiment_name="mlflow_demo1",
         artifact_location="mlflow_demo_artifacts1",
         tags={"env": "rnd", "version": "0.0.2"},
     )
