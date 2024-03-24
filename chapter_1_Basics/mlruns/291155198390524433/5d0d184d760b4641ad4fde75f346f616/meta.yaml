@@ -1,0 +1,15 @@
+artifact_uri: file:///F:/Projects/machine-learning-with-MLflow/Chapter 01 Basics/mlflow_demo_artifacts/5d0d184d760b4641ad4fde75f346f616/artifacts
+end_time: 1711283744719
+entry_point_name: ''
+experiment_id: '291155198390524433'
+lifecycle_stage: active
+run_id: 5d0d184d760b4641ad4fde75f346f616
+run_name: mlflow_test_runs
+run_uuid: 5d0d184d760b4641ad4fde75f346f616
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711283744650
+status: 3
+tags: []
+user_id: Saurav
