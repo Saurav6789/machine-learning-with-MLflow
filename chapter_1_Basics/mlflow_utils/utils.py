@@ -33,3 +33,29 @@ def create_experiment(
         (experiment_name).experiment_id
     mlflow.set_experiment(experiment_name=experiment_name)
     return experiment_id
+
+
+def retrieve_experiment(
+    experiment_id: str = None,
+    experiment_name: str = None
+) -> mlflow.entities.Experiment:
+    """_summary_
+
+    Args:
+        experiment_id (str, optional):
+        The Id of the experiment.
+        experiment_name (str, optional):
+        The name of the experiment
+
+    Returns:
+        experiment: mlflow.entities.Experiment
+         The mlflow experiment with the given id or name.
+    """
+    if experiment_id is not None:
+        experiment = mlflow.get_experiment(experiment_id)
+    elif experiment_name is not None:
+        experiment = mlflow.get_experiment_by_name(experiment_name)
+    else:
+        raise ValueError(
+            "Both experiment_id and experiment_name is not provided")
+    return experiment

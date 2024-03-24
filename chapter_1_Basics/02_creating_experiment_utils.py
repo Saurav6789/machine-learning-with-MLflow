@@ -11,3 +11,4 @@ if __name__ == "__main__":
         tags={"env": "rnd", "version": "0.0.2"},
     )
     logger.info(f"Display the experiment id {experiment_id}")
+    print("Experiment_id: {}".format(experiment_id))
