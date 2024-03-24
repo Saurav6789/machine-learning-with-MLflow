@@ -1,0 +1,15 @@
+artifact_uri: file:///F:/Projects/machine-learning-with-MLflow/chapter_1_Basics/nested_artifiacts/5b73831d0166432c9090a2e1ff5ee4f5/artifacts
+end_time: 1711298657181
+entry_point_name: ''
+experiment_id: '214704192996912214'
+lifecycle_stage: active
+run_id: 5b73831d0166432c9090a2e1ff5ee4f5
+run_name: Project
+run_uuid: 5b73831d0166432c9090a2e1ff5ee4f5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711298656970
+status: 3
+tags: []
+user_id: Saurav
