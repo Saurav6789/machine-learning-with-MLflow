@@ -59,3 +59,25 @@ def retrieve_experiment(
         raise ValueError(
             "Both experiment_id and experiment_name is not provided")
     return experiment
+
+
+def delete_experiment(
+    experiment_id: str = None,
+    experiment_name: str = None
+) -> None:
+    """_summary_
+
+    Args:
+        experiment_id (str, optional):
+        The id of the experiment.Defaults to None.
+        experiment_name (str, optional):
+        The name of the experiment.Defaults to None.
+    """
+    if experiment_id is not None:
+        mlflow.delete_experiment(experiment_id)
+    elif experiment_name is not None:
+        experiment = mlflow.get_experiment_by_name(experiment_name)
+        experiment_id = experiment.experiment_id
+        mlflow.delete_experiment(experiment_id)
+    else:
+        raise ValueError("Both experimentid and experiment name is None")

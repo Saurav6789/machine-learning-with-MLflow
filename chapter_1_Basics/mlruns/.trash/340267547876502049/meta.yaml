@@ -1,6 +1,9 @@
 artifact_location: file:///F:/Projects/machine-learning-with-MLflow/chapter_1_Basics/mlflow_demo_artifacts
 creation_time: 1711271101562
 experiment_id: '340267547876502049'
-last_update_time: 1711271101562
-lifecycle_stage: active
+last_update_time: 1711280214778
+lifecycle_stage: deleted
 name: mlflow_demo3
+tags:
+  env: rnd
+  version: 0.0.1
